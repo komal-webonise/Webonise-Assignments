@@ -1,0 +1,14 @@
+Algorithm for given file:
+
+1.Create a class foodItem which which hold a meal and its respective price.
+2.in the main program,take the input file and parse it linewise and then individual fieldwise.
+3.Create a hashmap which will act as a list of restaurants where the key will be restaurant id and value will represent menu of the restaurant.
+4.Store the content of every restaurant in the hashmap.
+5.Take the order from customers as input.
+6.Start taking every restaurant and for every restaurant generate all the possible combinations of meals available.
+7.For every combination, check whether the ordered items are present or not.
+8.If ordered items are present find the price of that particular combination and check it whether it is minimum or not.
+9. If the oordered menu is not present in one particular restaurant completely , print 'nil'.
+10.If the ordered list is present find the minimum price combination for a particular restaurant and store the id.
+11. Likewise iterate for all restaurants and find the price of ordered list having minimum price.
+12.Find minimum of all the restaurants price combination and print the id of same.
