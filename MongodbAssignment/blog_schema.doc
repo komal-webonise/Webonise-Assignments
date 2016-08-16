@@ -1,0 +1,88 @@
+
+Following schema is for collection posts:
+
+{
+	_id:post_id ,
+	post_heading : "Title of the post" ,
+	
+	post_body : "Contains description of post in form of text, images, html files etc" ,
+	
+	post_made_by : "Username of the post" ,
+	
+	post_link : "Contains post link to be shown" ,
+	
+	tags : [tag1,tag2] ,
+	
+	post_created : 'date of post' ,
+	
+	comment : [
+			{
+				comment_made_by : "user name of the user who commented" ,
+				comment_statement : "the comment posted by user " ,
+				comment_date_time: 'date and time of comment',
+				reply : [
+					{
+						reply_made_by : "user name of the user who replied" ,
+						reply_statement : "the statement posted by user " ,
+						reply_date_time: 'date and time of reply',
+					},
+					{
+						reply_made_by : "user name of the user who replied" ,
+						reply_statement : "the statement posted by user " ,
+						reply_date_time: 'date and time of reply',
+					}]
+			},
+			{
+				comment_made_by : "user name of the user who commented" ,
+				comment_statement : "the comment posted by user " ,
+				comment_date_time: 'date and time of comment',
+				reply : [
+					{
+						reply_made_by : "user name of the user who replied" ,
+						reply_statement : "the statement posted by user " ,
+						reply_date_time: 'date and time of reply',
+					},
+					{
+						reply_made_by : "user name of the user who replied" ,
+						reply_statement : "the statement posted by user " ,
+						reply_date_time: 'date and time of reply',
+					}]
+			}
+		]
+}
+
+
+Following schema is for collection users:
+
+{
+	login:
+		{
+			email : "email id of user" ,
+			password : "password of the user"
+		} ,
+
+	profile : 
+		{
+			user_name : "user name " ,
+			profession : "profession of user " ,
+			interest : "specify your interest" ,
+			contact :
+				{
+					email : "email of user" ,
+					contact : "contact no" 
+				}
+		} ,
+
+	login_status : "specifies whether user has logged in or not" ,
+
+	role :
+		{
+			role_title : "specifies whether the user is normal user , editor, admin ,superadmin ,etc " ,
+			post_id :[post_id1,post_id2] ,
+			user_id : [user_id1,user_id2] ,
+			admin_id : [admin_id1,admin_id2],
+			permissions : "gives access to the user whether 
+
+		}
+
+}
