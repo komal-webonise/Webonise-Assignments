@@ -1,0 +1,7 @@
+1|komal|komal8332@gmail.com|komal1234|buyer
+2|peter|peter880@gmail.com|petme@321|inventory manager
+3|karan|karan81@yahoo.com|ka@4356ggg|buyer
+4|bob|bobshopper@gmail.com|shopping%45|buyer
+5|ruth|noname54@yahoo.com|ruthkesar456|inventory manager	
+6|john|john6754@rediffmail.com|john99987|buyer
+7|kevin|kevin666@gmail.com|kevinadmin1|inventory manager		
