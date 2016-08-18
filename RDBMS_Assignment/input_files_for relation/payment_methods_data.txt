@@ -1,0 +1,5 @@
+5001|credit card|10
+5002|debit card|10
+5003|cash|0
+5004|coupons|12
+

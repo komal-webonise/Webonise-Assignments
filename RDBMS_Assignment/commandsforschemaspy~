@@ -1,0 +1,2 @@
+java -jar /home/webonise/Downloads/schemaSpy_5.0.0.jar -t pgsql -db postgres -s public -host localhost -dp /home/webonise/Downloads/postgresql-9.3-1103.jdbc3.jar  -u postgres -p easy123 -o /home/webonise/outputFolder3 -schemas "public,ecommerce"
+

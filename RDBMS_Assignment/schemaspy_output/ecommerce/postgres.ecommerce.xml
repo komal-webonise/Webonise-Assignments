@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="postgres" schema="ecommerce" type="PostgreSQL - 9.3.13">
+   <tables>
+      <table name="order_details" numRows="10" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="order_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="order_details_order_id_fkey" implied="false" onDeleteCascade="false" table="orders"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="product_detail_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="order_details_product_detail_id_fkey" implied="false" onDeleteCascade="false" table="product_details"/>
+         </column>
+      </table>
+      <table name="orders" numRows="5" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="int4">
+            <child column="order_id" foreignKey="order_details_order_id_fkey" implied="false" onDeleteCascade="false" table="order_details"/>
+            <child column="order_id" foreignKey="payments_order_id_fkey" implied="false" onDeleteCascade="false" table="payments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="user_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="orders_user_id_fkey" implied="false" onDeleteCascade="false" table="users"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="order_date" nullable="false" remarks="" size="13" type="date"/>
+         <column autoUpdated="false" digits="8" id="3" name="total_price" nullable="false" remarks="" size="8" type="float4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="orders_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="payment_methods" numRows="4" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="int4">
+            <child column="payment_method_id" foreignKey="payments_payment_method_id_fkey" implied="false" onDeleteCascade="false" table="payments"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="payment_method" nullable="false" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="2" name="discount" nullable="false" remarks="" size="10" type="int4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="payment_methods_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="payments" numRows="1" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="order_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="payments_order_id_fkey" implied="false" onDeleteCascade="false" table="orders"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="payment_method_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="payments_payment_method_id_fkey" implied="false" onDeleteCascade="false" table="payment_methods"/>
+         </column>
+         <column autoUpdated="false" digits="8" id="2" name="amount_paid" nullable="true" remarks="" size="8" type="float4"/>
+         <column autoUpdated="false" digits="0" id="3" name="payment_status" nullable="true" remarks="" size="2147483647" type="text"/>
+      </table>
+      <table name="product_details" numRows="12" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="int4">
+            <child column="product_detail_id" foreignKey="order_details_product_detail_id_fkey" implied="false" onDeleteCascade="false" table="order_details"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="product_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="id" foreignKey="product_details_product_id_fkey" implied="false" onDeleteCascade="false" table="products"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="2" name="product_colour" nullable="false" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="8" id="3" name="product_price" nullable="false" remarks="" size="8" type="float4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="product_details_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="products" numRows="5" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="int4">
+            <child column="product_id" foreignKey="product_details_product_id_fkey" implied="false" onDeleteCascade="false" table="product_details"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="product_name" nullable="false" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="products_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+      <table name="users" numRows="7" remarks="" schema="ecommerce" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="int4">
+            <child column="user_id" foreignKey="orders_user_id_fkey" implied="false" onDeleteCascade="false" table="orders"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="name" nullable="false" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="2" name="email" nullable="false" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="3" name="password" nullable="false" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="4" name="type" nullable="false" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="users_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+   </tables>
+</database>

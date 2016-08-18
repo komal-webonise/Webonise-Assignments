@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="postgres" schema="public" type="PostgreSQL - 9.3.13">
+   <tables>
+      <table name="order_details_last_30" numRows="0" remarks="" schema="public" type="VIEW">
+         <column autoUpdated="false" digits="0" id="0" name="Order Id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="1" name="order date" nullable="true" remarks="" size="13" type="date"/>
+         <column autoUpdated="false" digits="0" id="2" name="product names" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="3" name="product cost" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="4" name="user" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="email" nullable="true" remarks="" size="2147483647" type="text"/>
+      </table>
+      <table name="orderdetail_view" numRows="0" remarks="" schema="public" type="VIEW">
+         <column autoUpdated="false" digits="0" id="0" name="id" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="8" id="1" name="total_price" nullable="true" remarks="" size="8" type="float4"/>
+         <column autoUpdated="false" digits="0" id="2" name="order_date" nullable="true" remarks="" size="13" type="date"/>
+         <column autoUpdated="false" digits="0" id="3" name="discount" nullable="true" remarks="" size="10" type="int4"/>
+         <column autoUpdated="false" digits="0" id="4" name="payment_method" nullable="true" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="5" name="payment_status" nullable="true" remarks="" size="2147483647" type="text"/>
+      </table>
+   </tables>
+</database>
