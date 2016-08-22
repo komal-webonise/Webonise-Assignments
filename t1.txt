@@ -1,6 +1,10 @@
 ok
+<<<<<<< HEAD
 
 kkkk
 
 add a line
 >>>>>>> added from trial
+=======
+add a line
+>>>>>>> 63a75e8... added from trial
