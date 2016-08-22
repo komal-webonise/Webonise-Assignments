@@ -1,1 +1,6 @@
 ok
+
+kkkk
+
+add a line
+>>>>>>> added from trial
