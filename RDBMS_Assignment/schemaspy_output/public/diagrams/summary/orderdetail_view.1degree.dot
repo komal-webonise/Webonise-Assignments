@@ -1,0 +1,35 @@
+// dot 2.36.0 on Linux 3.13.0-32-generic
+// SchemaSpy rev 590
+digraph "orderdetail_view" {
+  graph [
+    rankdir="RL"
+    bgcolor="#f7f7f7"
+    nodesep="0.18"
+    ranksep="0.46"
+    fontname="Helvetica"
+    fontsize="11"
+  ];
+  node [
+    fontname="Helvetica"
+    fontsize="11"
+    shape="plaintext"
+  ];
+  edge [
+    arrowsize="0.8"
+  ];
+  "orderdetail_view" [
+    label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3" BGCOLOR="#9bab96" ALIGN="CENTER">orderdetail_view</TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT">id</TD></TR>
+      <TR><TD PORT="total_price" COLSPAN="3" ALIGN="LEFT">total_price</TD></TR>
+      <TR><TD PORT="order_date" COLSPAN="3" ALIGN="LEFT">order_date</TD></TR>
+      <TR><TD PORT="discount" COLSPAN="3" ALIGN="LEFT">discount</TD></TR>
+      <TR><TD PORT="payment_method" COLSPAN="3" ALIGN="LEFT">payment_method</TD></TR>
+      <TR><TD PORT="payment_status" COLSPAN="3" ALIGN="LEFT">payment_status</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#f7f7f7">  </TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">view</TD><TD ALIGN="RIGHT" BGCOLOR="#f7f7f7">  </TD></TR>
+    </TABLE>>
+    URL="tables/orderdetail_view.html"
+    tooltip="orderdetail_view"
+  ];
+}

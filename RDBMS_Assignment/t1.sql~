@@ -1,0 +1,2 @@
+CREATE  TRIGGER update_trigger AFTER INSERT ON ecommerce.order_details
+FOR EACH ROW EXECUTE PROCEDURE update_prices_cost();

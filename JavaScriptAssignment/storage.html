@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>
+	Welcome to the storage file
+</title>
+</head>
+<body>
+	 <form >
+  Enter key: <input type="text" id="myKey" name="keys"><br>
+  Enter value: <input type="text" id="myValue" name="values"><br>
+  <button onclick="addToLocal()">Add to local storage</button> <br><br>
+  <button onclick="addToSession()">Add to sessionStorage</button> <br><br>
+  <button onclick="getFromLocal()">Retrieve items of local storage</button> <br><br>
+  <button onclick="getFromSession()">Retrieve items of session storage</button> <br><br>
+
+  <button onclick="lengthOfLocal()">length of local storage</button> <br><br>
+  <button onclick="lengthOfSession()">length of session storage</button> <br><br>
+  <button onclick="removeFromLocal()">Remove  items from local storage</button> <br><br>
+  <button onclick="removeFromSession()">Remove items from session storage</button> <br><br>
+  
+  <script>
+    function addItem(my_key,my_value)
+    {
+    	
+    	this.setItem(my_key,my_value);
+	}
+    function retrieveItem(my_key)
+    {
+    	this.getItem(my_key);
+    }
+    function getLength()
+    {
+    	 this.length;
+    }
+    function removeanItem(my_key)
+    {
+    	 this.removeItem(my_key);
+    }
+  	function addToLocal()
+  	{
+  		 var my_key = document.getElementById("myKey").value;
+  		 var my_value = document.getElementById("myValue").value;
+  		 addItem.call(localStorage,my_key,my_value);
+
+  	}
+  	function addToSession()
+  	{
+  		 var my_key = document.getElementById("myKey").value;
+  		 var my_value = document.getElementById("myValue").value;
+  		 addItem.call(sessionStorage,my_key,my_value);
+
+  	}
+  	function getFromLocal()
+  	{
+  		 var my_key = document.getElementById("myKey").value;
+  		 retrieveItem.call(localStorage,my_key);
+  	}
+  	function getFromSession()
+  	{
+  		 var my_key = document.getElementById("myKey").value;
+  		 retrieveItem.call(sessionStorage,my_key);
+  	}
+  	function lengthOfLocal()
+  	{
+  		getLength.call(localStorage);
+  	}
+  	function lengthOfSession()
+  	{
+  		getLength.call(sessionStorage);
+  	}
+  	function removeFromLocal()
+  	{
+ 		var my_key = document.getElementById("myKey").value;
+  		 removeanItem.call(localStorage,my_key);
+  	}
+  	function removeFromSession()
+  	{
+ 		var my_key = document.getElementById("myKey").value;
+  		 removeanItem.call(sessionStorage,my_key);
+  	}
+  </script>
+</form> 
+</body>
+</html>
