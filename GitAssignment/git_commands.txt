@@ -1,0 +1,33 @@
+Following commands are used to create repository:
+
+1. git init [project-name]
+Description:Creates a new local repository with the specified name.
+
+2.git clone [url]
+Description:Downloads a project and its entire version history.
+
+Following commands are used to make changes in the repository created:
+1. git status
+Description:Lists all new or modified fil;es to be committed.
+2.git diff
+Description:Shows file differences not yet staged
+3. git add [file]
+Description:Snapshots the file in preparation for versioning
+4.git diff --staged
+Description:Shows file differences between staging and the last fil;e version.
+5. git reset [file]
+ Description:Unstages the file,but reserves its content.
+ 6.git commit -m "[descriptive message]"
+ Description:Records final snapshot in permanently in version history.
+
+ Following commands are used to make group changes :
+ 1.git branch
+ Description:Lists all local branches in the current local repository
+ 2.git branch [branch-name]
+ Description: Creates a new branch
+ 3. git checkout [branch-name]
+ Description: Switches to the specified branch and updates the working directory.
+ 4. git merge [branch]
+ Description:Combines the specified branch's history into the current branch
+ 5. git branch -d [branch-name]
+ Description: Deletes the specified branch
