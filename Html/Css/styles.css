@@ -1,0 +1,176 @@
+.body{
+    width: 100% ;
+   
+}
+.header{
+background-color: dimgray;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    
+    
+}
+.container{
+    width: 1170px;
+     margin:0 auto;
+    
+}
+.logo{
+  
+	height: 35px ;
+	width : 140px ;
+    background-color: #ff8000;
+    
+   
+	float: left ;
+
+
+
+}
+.nav{
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.navigationTab{
+    float:left;
+    list-style: none;
+    margin-left: 50px;
+   
+    
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+.navigationTab a {
+    line-height: 35px;
+    text-decoration: none;
+	list-style: none;
+    color: #aaaaaa;
+    font-size: 18px;
+    text-transform: uppercase;
+     padding: 10px;
+    
+}
+.navigationTab a:hover{color: #444444;}
+
+.banner{
+   
+    height: 485px;
+    background-color: #71c4ea;
+}
+.howItWorks{
+    margin-top: 64px;
+}
+h1{
+    text-decoration: none ;
+    font-size: 36px;
+    color: #444444;
+    text-align: center;
+}
+.circles{
+    text-align: center;
+    margin-top: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+}
+.circles ul{
+    display: inline-block;
+}
+.circles li{
+    list-style: none;
+    text-decoration: none;
+}
+.firstItem{
+    float:left ;  
+    
+    width:140px;
+}
+.firstItem a{
+    text-decoration: none;
+   
+    display: block;
+}
+.firstItem p,.footerItem a:hover{color: #444444;}
+.circleItem{
+    float:left ;  
+    margin-left: 75px; 
+    width:140px;
+}
+.circleItem a{
+    text-decoration: none;
+    display: block;
+   
+   
+}
+.circleItem p:hover{color: #444444;}
+
+.circle{
+    background: #efefef;
+    width: 140px;
+    height: 140px;
+   display: inline-block;
+    border-radius: 50%;
+}
+
+.circleItem p{
+    margin-top: 30px;
+    font-size: 18px;
+    width: 140px;
+     margin-bottom: 0;
+    color: #888888;
+    text-align: center;
+}
+.firstItem p{
+    margin-top: 30px;
+    font-size: 18px;
+    width: 140px;
+     margin-bottom: 0;
+    color: #888888;
+    text-align: center;
+}
+.footer{
+    background-color: #ececec;
+     margin-top: 110px;
+   
+}
+.nav_footer{
+     text-align: center;
+}
+.nav_footer ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.nav_footer ul{
+   
+    display: inline-block;
+    margin-right:auto;
+    margin-left:auto;
+}
+.footerItem{
+    float: left;
+    list-style: none;
+  
+    margin-right: 30px;
+  
+	
+}
+
+.footerItem a{
+    line-height: 50px;
+    text-decoration: none;
+	
+    color: #ff8000;
+    font-size: 16px;
+    text-transform: uppercase;
+}
