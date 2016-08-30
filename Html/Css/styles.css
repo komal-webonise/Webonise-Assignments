@@ -16,12 +16,12 @@ background-color: dimgray;
 }
 .logo{
   
-	height: 35px ;
-	width : 140px ;
+    height: 35px ;
+    width : 140px ;
     background-color: #ff8000;
     
    
-	float: left ;
+    float: left ;
 
 
 
@@ -54,7 +54,7 @@ background-color: dimgray;
 .navigationTab a {
     line-height: 35px;
     text-decoration: none;
-	list-style: none;
+    list-style: none;
     color: #aaaaaa;
     font-size: 18px;
     text-transform: uppercase;
@@ -85,7 +85,8 @@ h1{
     margin-bottom: 0;
 }
 .circles ul{
-    display: inline-block;
+    margin: 0 auto;
+    width: 786px;
 }
 .circles li{
     list-style: none;
@@ -163,13 +164,14 @@ h1{
   
     margin-right: 30px;
   
-	
+    
 }
 
 .footerItem a{
     line-height: 50px;
     text-decoration: none;
-	
+    padding-top:10px;
+    padding-bottom:10px;
     color: #ff8000;
     font-size: 16px;
     text-transform: uppercase;
