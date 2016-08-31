@@ -1,0 +1,155 @@
+body{
+    font-family: Georgia;
+    font-size: 13px;
+    color: #222222;
+}
+.nav-header img{
+    height: 70px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.navigationBar{
+    background-color: #3355aa;
+
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-collapse , .navbar-form{
+    background-color: #3355aa;
+    border-color:#3355aa;
+    text-align:center;
+}
+.collapse .navbar-collapse ul{
+    margin: 0;
+    padding:0;
+}
+ul.nav.navbar-nav li a{
+    font-family: italic;
+    font-size: 15px;
+
+    line-height: 30px;
+    color: white;
+     margin-bottom: 5px;
+    margin-top: 5px;
+    padding-top:0;
+    padding-bottom:0;
+}
+.banner{
+      margin-top: 35px;
+    margin-bottom: 45px;
+}
+.bannerImage{
+    border:0px;
+
+}
+.navbar-form .navbar-right{
+    text-align: center;
+}
+.bannerleftImage{
+    box-shadow: 10px 10px 10px 10px #888888;
+    padding: 10px;
+}
+.bannerleftImage p{
+    text-align: center;
+    font-size: 14px;
+    font-family: serif;
+}
+h2{
+    font-size: 16px;
+    color:#3355aa;
+}
+.divider{
+    background-color: yellow;
+    height: 5px;
+    margin-bottom:10px;
+}
+.bannerMiddle li{
+    list-style: none;
+    text-decoration: none;
+}
+.bannerMiddle li p{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+h5{
+    font-size: 10px;
+}
+.bannerlast li{
+    list-style: none;
+    text-decoration: none;
+}
+.bannerlast li p{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+.sectors{
+    margin-top: 25px;
+    padding-bottom: 75px;
+    background-color: beige;
+}
+.listSectors{
+    margin-top: 25px;
+}
+h1{
+ text-align: center;
+    font-size: 28px;
+}
+.rectangle{
+    height: 250px;
+    background-color: lightgray;
+}
+h4{
+ font-size: 16px;
+    color: #3355aa;
+    text-align: center;
+}
+.box{
+    background-color: white;
+  border-radius: 5px;
+ box-shadow: 1px 1px 1px 1px #888888;
+    padding: 5px;
+}
+.footer{
+    
+    background-color: gray;
+    padding-bottom:25px;
+}
+.footerRight,.footerLeft{
+    margin-top: 15px;
+
+}
+.footerLeft  ul li a{
+    font-size : 14px;
+    color: lightgray;
+    padding-top:10px;
+    padding-bottom: 10px;
+    line-height:14px;
+    border-right: 2px solid lightgray;
+    padding-right: 8px;
+}
+.footerLeft  ul li a,.footerRight  ul li  a: hover{
+    color: white;
+}
+span.verticalLine{
+    border-right: 2px solid lightgray;
+    margin-left: 5px;
+}
+
+.horizontalLine{
+    background-color: lightgray;
+   border-bottom: 1px;
+}
+p.pull-left{
+    font-size: 11px;
+    color: lightgray;
+}
+.footerRight  ul li a{
+    font-size: :10px;
+    color: lightgray;
+    padding-top:10px;
+    line-height: 10px;
+    padding-bottom: 10px;
+    border-right: 2px solid lightgray;
+    padding-right: 8px;
+}
