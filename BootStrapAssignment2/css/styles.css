@@ -1,0 +1,269 @@
+.body{
+    background-color: #fcfcfc;
+}
+.navbar{
+    margin:0;
+}
+.navbar-nav{
+    margin: 0;
+  
+}
+.navitems .user {
+  
+}
+
+a.menu{
+    background-image: url("../images/menu-icon.png");
+    vertical-align: middle;
+    background-repeat: no-repeat;
+   
+}
+a.logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+a.notification{
+     background-image: url("../images/notification-icon.png");
+     background-repeat: no-repeat;
+}
+.cart{
+     background-image:  url("../images/cart-icon.png")  ;
+     background-repeat: no-repeat;
+}
+
+span.userIcon{
+     background-image: url("../images/user-icon.png");
+     background-repeat: no-repeat;
+    float:left;
+    display: block;
+    padding: 20px;
+    
+}
+span.customerName{
+    background-color: #1166ee;
+   margin:15px 0 15px 10px ;
+   
+    padding-left:5px;
+    padding-right:5px;
+   line-height: 20px;
+    font-size: 12px;
+    color: white;
+    height:20px;
+    border-radius: 3px;
+    display:block;
+    border-left: 1px solid lightgray;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    
+}
+ul.navbar-left li,ul.navbar-right li{
+    border-left:1px solid lightgray;
+}
+ul.info{
+    float: left;
+}
+span.userInfo{
+    float:left;
+   display:inline-block;
+    
+}
+span.userName{
+    display: block;
+    font-size:14px;
+    color:#222;
+   
+}
+span.userMail{
+   display: block;
+   font-size:11px;
+    color:#666666;
+    
+}
+
+
+.btn-default{
+    display: inline-block;
+}
+h2{
+    font-size:18px;
+    color:#333;
+    float:left;
+}
+.addAnother{
+    font-size:14px;
+    color:#1166ee;
+    border: 1px solid #1166ee;
+    padding: 5px;
+    float:left;
+    margin:10px 0 10px 10px;
+    
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.banner{
+    border-top:1px solid lightgray; 
+     border-bottom:1px solid lightgray; 
+    background-color: #fcfcfc;
+   
+    padding-bottom: 60px;
+}
+.box{
+    border: 1px solid lightgray;
+}
+.box img{
+    line-height: 90px;
+    display: inline-block;
+    height: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.content{
+    padding: 20px;
+    border-top: 1px solid lightgray;
+}
+span.upper{
+  display: inline-block;
+}
+.brandTitle{
+    display: block;
+    font-size: 18px;
+    color: black;
+    font-family: sans-serif;
+}
+.lastUpdate{
+    display: block;
+    font-size: 14px;
+    color: #aaaaaa;
+    font-family: sans-serif;
+}
+.starIcon{
+    display: inline-block;
+    margin-left: 80px;
+    background-image: url("/images/rating-icon.png");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    padding: 10px 10px 40px 10px;
+   
+}
+.tickets{
+    padding-left: 10px;
+    float: left;
+}
+.ticketLabel{
+    display: block;
+    font-size: 16px;
+    color: #1166ee;
+}
+.ticketNumber{
+    display: block;
+    font-size: 48px;
+    color: #1166ee;
+}
+.severityOne{
+    margin-left: 50px;
+     padding-left: 10px;
+    float: left;
+}
+.severity1{
+    display: block;
+    font-size: 14px;
+    color: #ff0000;
+}
+.severityNumber1{
+    display: block;
+    font-size: 24px;
+    color: #ff0000;
+}
+.severityTwo{
+    margin-left: 30px;
+     padding-left: 10px;
+    float: left;
+}
+.severity2{
+    display: block;
+    font-size: 14px;
+    color: #333333;
+}
+.severityNumber2{
+    display: block;
+    font-size: 24px;
+    color: #333333;
+}
+.assets{
+     
+     padding-left: 10px;
+    float: left;
+}
+.alerts{
+     margin-left: 70px;
+     padding-left: 10px;
+    float: left;
+}
+.assetsTitle,.alertsTitle{
+     display: block;
+    font-size: 16px;
+    color: #333333;
+}
+.assetsNumber,.alertsNumber{
+     display: block;
+    font-size: 30px;
+    color: #1166ee;
+}
+.viewDetail{
+    font-size: 14px;
+    color:#1166ee;
+    text-decoration: underline;
+}
+.secondRow{
+    margin-top: 20px;
+}
+footer{
+background-color: #fcfcfc;
+margin-top: 20px;
+}
+.navFooter{
+text-align: center;
+}
+.navFooter  li{
+list-style: none;
+text-decoration: none;
+}
+footer ul{
+display: inline-block;
+}
+.footerItem{
+float: left;
+list-style: none;
+margin-right: 20px;
+}
+.footerItem a{
+line-height: 12px;
+text-decoration: none;
+padding-top:0;
+padding-bottom:0;
+color: #666;
+font-size: 12px; 
+    border-left: 1px solid lightgray;
+   padding-left: 10px;
+
+}
+.footerItemFirst{
+float: left;
+list-style: none;
+margin-right: 20px;
+}
+.footerItemFirst a{
+line-height: 12px;
+text-decoration: none;
+padding-top:0;
+padding-bottom:0;
+color: #666;
+font-size: 12px; 
+    
+
+}
