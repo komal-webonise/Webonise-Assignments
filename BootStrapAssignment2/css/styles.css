@@ -8,28 +8,64 @@
     margin: 0;
   
 }
-.navitems .user {
-  
+.navbar-collapse {
+/* padding-right: 15px; */
+padding-left: 0; 
+
+}
+.navbar-nav>li>a.user,.navbar-nav>li>a.menu,.navbar-nav>li>a.customer,.navbar-nav>li>a.cart,.navbar-nav>li>a.notification { padding-top: 0; 
+ padding-bottom: 0; 
+}
+.navbar-nav li a.logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-nav li a.user{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.navbar-nav>li>a {
+
+line-height: normal;
 }
 
 a.menu{
     background-image: url("../images/menu-icon.png");
-    vertical-align: middle;
+    
     background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width:60px;
+    height: 54px;
+    
    
 }
 a.logo {
-    background-image: url("../images/logo.png");
-    background-repeat: no-repeat;
-    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+    
+}
+a.user{
+    padding-bottom: 7px;
+    padding-top: 7px;
 }
 a.notification{
      background-image: url("../images/notification-icon.png");
      background-repeat: no-repeat;
+     background-position: center;
+    text-align: center;
+    width:60px;
+    height: 54px;
 }
-.cart{
+a.cart{
      background-image:  url("../images/cart-icon.png")  ;
      background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width:60px;
+    height: 54px;
 }
 
 span.userIcon{
@@ -37,20 +73,20 @@ span.userIcon{
      background-repeat: no-repeat;
     float:left;
     display: block;
-    padding: 20px;
+    padding:  15px;
     
 }
 span.customerName{
     background-color: #1166ee;
-   margin:15px 0 15px 10px ;
+   margin:17px 15px 17px 10px ;
    
-    padding-left:5px;
-    padding-right:5px;
+    padding-left:15px;
+    padding-right:15px;
    line-height: 20px;
     font-size: 12px;
     color: white;
     height:20px;
-    border-radius: 3px;
+    border-radius: 9px;
     display:block;
     border-left: 1px solid lightgray;
 }
@@ -59,7 +95,11 @@ li{
     text-decoration: none;
     
 }
-ul.navbar-left li,ul.navbar-right li{
+i.star{
+    color: orange;
+    float: right;
+}
+ul.navbar-left li a.logo,ul.navbar-left li.customer,ul.navbar-right li a.notification, ul.navbar-right li a.cart,ul.navbar-right li a.user{
     border-left:1px solid lightgray;
 }
 ul.info{
@@ -87,19 +127,29 @@ span.userMail{
 .btn-default{
     display: inline-block;
 }
-h2{
+h6{
     font-size:18px;
     color:#333;
     float:left;
+    padding-bottom: 18px;
+    padding-top: 18px;
 }
 .addAnother{
     font-size:14px;
     color:#1166ee;
     border: 1px solid #1166ee;
+    border-radius: 0;
     padding: 5px;
     float:left;
-    margin:10px 0 10px 10px;
+    margin:20px 0 20px 20px;
     
+    
+}
+.clearfix{
+    clear: both;
+}
+ul.entireRow{
+    padding:0;
 }
 a{
     display: block;
@@ -114,14 +164,18 @@ a{
 }
 .box{
     border: 1px solid lightgray;
+    background-color: #f8f8f8;
+    min-height: 369px;
+    min-width: 370px;
 }
-.box img{
+.first,.second{
+    margin-right: 40px;
+}
+.brandlogo{
     line-height: 90px;
-    display: inline-block;
-    height: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+    text-align: center;
 }
+
 .content{
     padding: 20px;
     border-top: 1px solid lightgray;
@@ -141,17 +195,15 @@ span.upper{
     color: #aaaaaa;
     font-family: sans-serif;
 }
-.starIcon{
-    display: inline-block;
-    margin-left: 80px;
-    background-image: url("/images/rating-icon.png");
-    background-repeat: no-repeat;
-    vertical-align: middle;
-    padding: 10px 10px 40px 10px;
-   
+
+.firstrow{
+     margin-top: 15px;
+}
+.secondrow{
+     margin-top: 15px;
 }
 .tickets{
-    padding-left: 10px;
+   
     float: left;
 }
 .ticketLabel{
@@ -165,7 +217,7 @@ span.upper{
     color: #1166ee;
 }
 .severityOne{
-    margin-left: 50px;
+    margin-left: 60px;
      padding-left: 10px;
     float: left;
 }
@@ -180,7 +232,7 @@ span.upper{
     color: #ff0000;
 }
 .severityTwo{
-    margin-left: 30px;
+    margin-left: 25px;
      padding-left: 10px;
     float: left;
 }
@@ -196,12 +248,12 @@ span.upper{
 }
 .assets{
      
-     padding-left: 10px;
+    
     float: left;
 }
 .alerts{
-     margin-left: 70px;
-     padding-left: 10px;
+     margin-left:  90px;
+   
     float: left;
 }
 .assetsTitle,.alertsTitle{
@@ -215,16 +267,18 @@ span.upper{
     color: #1166ee;
 }
 .viewDetail{
+     margin-top: 15px;
     font-size: 14px;
     color:#1166ee;
     text-decoration: underline;
 }
-.secondRow{
-    margin-top: 20px;
+.eachBox{
+    margin-bottom: 30px;
 }
 footer{
 background-color: #fcfcfc;
-margin-top: 20px;
+padding-bottom: 15px;
+    padding-top: 15px;
 }
 .navFooter{
 text-align: center;
@@ -239,31 +293,35 @@ display: inline-block;
 .footerItem{
 float: left;
 list-style: none;
-margin-right: 20px;
+
 }
 .footerItem a{
 line-height: 12px;
 text-decoration: none;
-padding-top:0;
-padding-bottom:0;
+padding-right:15px ;
+ padding-left: 15px;
 color: #666;
 font-size: 12px; 
     border-left: 1px solid lightgray;
-   padding-left: 10px;
+  
 
 }
 .footerItemFirst{
 float: left;
 list-style: none;
-margin-right: 20px;
+
 }
 .footerItemFirst a{
 line-height: 12px;
 text-decoration: none;
-padding-top:0;
-padding-bottom:0;
+padding-right:15px ;
+   
 color: #666;
 font-size: 12px; 
     
+
+}
+.footerItem a,.footerItemFirst a:hover{
+color: grey;
 
 }
